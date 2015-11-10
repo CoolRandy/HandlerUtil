@@ -1,0 +1,5 @@
+# HandlerUtil
+总结关于android所有handler相关的知识点
+
+这个仓库中的代码全部是用于对Handler进行测试的一些demo，主要包括对于handler分别在UI线程以及子线程中的使用
+此外还有对于HandlerThread的使用，具体后面会所有的类文件做一个详细说明，请稍后^_^
