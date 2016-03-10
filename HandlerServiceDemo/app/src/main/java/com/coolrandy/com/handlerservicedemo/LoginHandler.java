@@ -57,13 +57,15 @@ public class LoginHandler {
                         }catch (InterruptedException e){
                             e.printStackTrace();
                         }
-                        Handler handler1 = new Handler();
+//                        Handler handler1 = new Handler();
 
-                        Message message = Message.obtain(handler1, LOGIN_FINISHED);
+//                        Message message = Message.obtain(handler1, LOGIN_FINISHED);
+                        Message message = Message.obtain();
                         Log.e("TAG", "start: get data " + message.what + "");
                         Bundle data = new Bundle();
                         data.putString("MESSAGE_KEY", "Done！");
                         message.setData(data);
+                        message.what = LOGIN_FINISHED;
                         sendMessage(message);
                         break;
                     case LOGIN_FINISHED:
